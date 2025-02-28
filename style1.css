@@ -1,0 +1,87 @@
+@font-face {
+    font-family: arcade;
+    src: url("mago1.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    background-color: darkslategray;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: darkslategray;
+    font-family: arcade;
+    font-size: 8vw; /* Tamanho responsivo */
+    color: brown;
+    text-shadow: 5px 5px 5px black;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 40px; /* Aumenta a separação do parágrafo */
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-family: arcade;
+    font-size: 4vw; /* Tamanho responsivo */
+    text-align: justify;
+    max-width: 90%;
+    margin: auto;
+    color: white;
+    margin-bottom: 100px; /* Aumenta a separação do input */
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 10px black;
+    text-align: center;
+    font-size: 4vw; /* Tamanho responsivo */
+    max-width: 80%;
+    margin: 80px auto; /* Aumenta a separação do botão */
+}
+
+#meuBotao {
+    display: flex;
+    justify-content: center;
+    font-family: arcade;
+    font-size: 5vw; /* Tamanho responsivo */
+    background-color: violet;
+    box-shadow: 5px 5px 5px black;
+    max-width: 80%;
+    margin: 80px auto; /* Aumenta a separação */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Ajustes específicos para celulares */
+@media screen and (max-width: 767px) {
+    h1, p, input, #meuBotao {
+        font-size: 6vw; /* Ajusta melhor para telas menores */
+        max-width: 95%;
+    }
+
+    h1 {
+        margin-bottom: 60px; /* Mais espaçamento no celular */
+    }
+
+    p {
+        margin-bottom: 100px; /* Mais espaço antes do input */
+    }
+
+    input {
+        margin: 100px auto; /* Mais espaço antes do botão */
+    }
+
+    #meuBotao {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
